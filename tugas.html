@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Dropdown & Listbox Multiple</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fffafc;
+      margin: 40px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    fieldset {
+      width: 350px;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 5px;
+      background-color: #fff;
+    }
+
+    legend {
+      font-weight: bold;
+      padding: 0 8px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+    }
+
+    select {
+      width: 100%;
+      padding: 6px;
+      margin-bottom: 15px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    button {
+      background-color: #2e8b57;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #256d47;
+    }
+  </style>
+</head>
+<body>
+  <h1>Form Dropdown & Listbox Multiple</h1>
+</header>
+</body>
+</html>
+
+  <form>
+    <fieldset>
+      <legend>Formulir Pilihan</legend>
+
+      <label for="jurusan">Pilih Program Studi (Prodi)</label>
+      <select id="jurusan" name="jurusan">
+        <option value=>Teknik Informatika</option>
+        <option value=>Teknik Komputer</option>
+        <option value=>Sistem Informasi</option>
+        <option value=>Ilmu Komputer</option>
+      </select>
+
+      <label for="minat">Fokus Minat</label>
+      <select id="minat" name="minat" multiple size="5">
+        <option value=>Machine Learning</option>
+        <option value=>Kecerdasan Buatan</option>
+        <option value=>Data Mining</option>
+        <option value=>Internet of Things</option>
+        <option value=>Cyber Security</option>
+      </select>
+
+      <br>
+      <button type="submit">Submit</button>
+    </fieldset>
+  </form>
+</body>
+</html>
